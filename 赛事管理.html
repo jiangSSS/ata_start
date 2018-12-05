@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./school.css">
+    <title>赛事管理</title>
+
+</head>
+
+<body>
+    <div class="main-tab">
+        <div class="tab-box">
+            <ul style="padding-left:40px;">
+                <li class="active">院校决赛</li>
+                <li>省赛区决赛</li>
+                <li>中国总决赛</li>
+                <li>全球总决赛</li>
+            </ul>
+            <div class="tab-content">
+                <div class="active-txt">
+                    <p class="game_nums"> <span>参赛总人数：233</span><span class="win-num">晋级人数：600</span></p>
+                    <form class="query">
+                        <input class="query_input" type="text" placeholder="请输入报名人信息">
+                        <input class="query_input" type="text" placeholder="请输入专业名称">
+                        <select class="query_select">
+                            <option value="0" style="color:#aab2bd" hidden>晋级状态</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="query_button button_reset">重置</button>
+                        <button class="query_button">查询</button>
+                        <button class="query_button">作品上传</button>
+                    </form>
+                    <table width=100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>院系</th>
+                            <th>专业</th>
+                            <th>报名编号</th>
+                            <th>手机号</th>
+                            <th>报名时间</th>
+                            <th>作品</th>
+                            <th>作品得分</th>
+                            <th>是否晋级</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10005.svg"></span>
+                                <span>弃权</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                    </table>
+                    <!-- 分页 -->
+                    <pagination class="pagination-warp">
+                        <ul class="pagination">
+                            <li><a href="#">«</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </pagination>
+
+                </div>
+                <div class="">
+                    <p class="game_nums"> <span>参赛总人数：233</span><span class="win-num">晋级人数：600</span></p>
+                    <form class="query">
+                        <input class="query_input" type="text" placeholder="请输入报名人信息">
+                        <input class="query_input" type="text" placeholder="请输入专业名称">
+                        <select class="query_select">
+                            <option value="0" style="color:#aab2bd" hidden>晋级状态</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="query_button button_reset">重置</button>
+                        <button class="query_button">查询</button>
+                        <button class="query_button">作品上传</button>
+                    </form>
+                    <table width=100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>院系</th>
+                            <th>专业</th>
+                            <th>报名编号</th>
+                            <th>手机号</th>
+                            <th>报名时间</th>
+                            <th>作品</th>
+                            <th>作品得分</th>
+                            <th>是否晋级</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10005.svg"></span>
+                                <span>弃权</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                    </table>
+                    <!-- 分页 -->
+                    <pagination class="pagination-warp">
+                        <ul class="pagination">
+                            <li><a href="#">«</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </pagination>
+
+                </div>
+                <div class="">
+                    <p class="game_nums"> <span>参赛总人数：233</span><span class="win-num">晋级人数：600</span></p>
+                    <form class="query">
+                        <input class="query_input" type="text" placeholder="请输入报名人信息">
+                        <input class="query_input" type="text" placeholder="请输入专业名称">
+                        <select class="query_select">
+                            <option value="0" style="color:#aab2bd" hidden>晋级状态</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="query_button button_reset">重置</button>
+                        <button class="query_button">查询</button>
+                        <button class="query_button">作品上传</button>
+                    </form>
+                    <table width=100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>院系</th>
+                            <th>专业</th>
+                            <th>报名编号</th>
+                            <th>手机号</th>
+                            <th>报名时间</th>
+                            <th>作品</th>
+                            <th>作品得分</th>
+                            <th>是否晋级</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10005.svg"></span>
+                                <span>弃权</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                    </table>
+                    <!-- 分页 -->
+                    <pagination class="pagination-warp">
+                        <ul class="pagination">
+                            <li><a href="#">«</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </pagination>
+
+                </div>
+                <div class="">
+                    <p class="game_nums"> <span>参赛总人数：233</span><span class="win-num">晋级人数：600</span></p>
+                    <form class="query">
+                        <input class="query_input" type="text" placeholder="请输入报名人信息">
+                        <input class="query_input" type="text" placeholder="请输入专业名称">
+                        <select class="query_select">
+                            <option value="0" style="color:#aab2bd" hidden>晋级状态</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="query_button button_reset">重置</button>
+                        <button class="query_button">查询</button>
+                        <button class="query_button">作品上传</button>
+                    </form>
+                    <table width=100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>院系</th>
+                            <th>专业</th>
+                            <th>报名编号</th>
+                            <th>手机号</th>
+                            <th>报名时间</th>
+                            <th>作品</th>
+                            <th>作品得分</th>
+                            <th>是否晋级</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10005.svg"></span>
+                                <span>弃权</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10002.svg"></span>
+                                <span>淘汰</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张小刚</td>
+                            <td>软件学院</td>
+                            <td>计算机</td>
+                            <td>324134</td>
+                            <td>13812349999</td>
+                            <td>2019-12-48 12:00</td>
+                            <td><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3512689731,1737798812&fm=26&gp=0.jpg"
+                                    alt=""></td>
+                            <td>80</td>
+                            <td><span><img class="radius_round" src="http://ue.caixuan.net/jingsai_pc/images/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/u10001.svg">
+                                </span><span>晋级</span></td>
+                        </tr>
+                    </table>
+                    <!-- 分页 -->
+                    <pagination class="pagination-warp">
+                        <ul class="pagination">
+                            <li><a href="#">«</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </pagination>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".tab-box li").each(function (index) {
+            $(this).click(function () {
+                $("li.active").removeClass("active");
+                $(this).addClass("active");
+                $(".tab-content div.active-txt").removeClass("active-txt");
+                $(".tab-content div").eq(index).addClass("active-txt");
+            });
+        })
+    });
+</script>
+
+</html>

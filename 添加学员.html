@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./school.css">
+    <title>教师管理</title>
+
+</head>
+
+<body>
+    <div class="container_warp">
+        <div class="school_title">
+            添加学员
+        </div>
+        <div class="container">
+            <form name="myForm">
+                <table class="add_student">
+                    <tr valign="top">
+                        <td>
+                            <div class="add_list">
+                                <p class="fll" style="margin:0 20px 0 30px;">待办列表</p>
+                                <p class="fll">10</p>
+                            </div>
+                            <div><input class="add_input" type="text" placeholder="请输入学员名称或专业名称"></div>
+                            <select name="leftList" multiple size="10" class="select_add leftList">
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘长胜</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="add_to query_button" type="button" name="to" value=" >> " onclick="moveList('leftList','rightList')">
+                            <p></p>
+                            <input class="add_back query_button" type="button" name="backTo" value=" << " onclick="moveList('rightList','leftList')">
+                        </td>
+                        <td>
+                            <div class="add_list">
+                                <p class="fll" style="margin:0 20px 0 30px;">已选列表</p>
+                                <p class="fll">10</p>
+                            </div>
+                            <div style="border-right:1px solid #ccc"><input class="add_input" type="text" placeholder="请输入学员名称或专业名称"></div>
+                            <select name="rightList" multiple size="10" class="select_add rightList">
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">马宏宇</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">马宏宇</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">马宏宇</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">马宏宇</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">马宏宇</span>&nbsp&nbsp&nbsp&nbsp<span>绘画</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                                <option><span class="student_name">刘国柱</span>&nbsp&nbsp&nbsp&nbsp<span>美术设计</span></option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button class="query_button add_summit">保存</button>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+<script language="JavaScript">
+    function moveList(from, to) {
+        var fromList = document.myForm.elements[from];
+        var fromLen = fromList.options.length;
+        var toList = document.myForm.elements[to];
+        var toLen = toList.options.length;
+        var current = fromList.selectedIndex;
+        while (current > -1) {
+            var o = fromList.options[current];
+            var t = o.text;
+            var v = o.value;
+            var optionName = new Option(t, v, false, false);
+            toList.options[toLen] = optionName;
+            toLen++;
+            fromList.options[current] = null;
+            current = fromList.selectedIndex;
+        }
+    }
+</script>
+</html>
