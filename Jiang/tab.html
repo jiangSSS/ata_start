@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        比如选中的这个加上.active的class样式，如果按照jquery或者原生的思路来，无非就是清除兄弟的.active 添加自己的 .active
+
+        这种选中切换，在vue中的思路很简单，当某个被选中时，对应的标签就会有.router-link-active
+        的class名。那么你无需在router-link标签上添加任何class名，直接在样式中写样式即可：
+        .router-link-active{
+        background:blue;
+        opacity:1
+        }
+
+        当然了，在很多情况下，如果router-link不只一个，各有各的选中样式，那么使用默认的.router-link-active
+        来更改样式已经满足不了开发需求，这个时候，可以在标签内加入active-class="自己定义一个名字“
+        实例如下
+
+        <router-link :to="{name:'shengchan'}" active-class="active">
+            <el-tooltip class="item" effect="light" content="生产管理系统" placement="right">
+                <div index="1">
+                    <img src="../../assets/images/shengchan.png" alt="">
+                </div>
+            </el-tooltip>
+        </router-link>
+
+        <style>
+            .nav-bar .active .item {
+                background: #046499;
+                opacity: 1;
+            }
+        </style>
+
+        当切换时，也希望内容部分变换有一个过渡的效果，那么就用到了vue的过渡<transtion> ,将包裹在过渡内
+
+            <transition name="fade">
+                <router-view></router-view>
+            </transition>
+
+            <style>
+                .fade-enter-active,
+                .fade-leave-active {
+                    transition: opacity .6s;
+                }
+
+                .fade-enter,
+                .fade-leave-active {
+                    opacity: 0;
+                }
+
+                /* </div></body></html> */

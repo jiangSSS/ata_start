@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        ul li{
+            list-style: none;
+        }
+        .strip{
+            padding: 20px;
+            width: 892px;
+            height: 25px;
+           
+        }
+        .strip_bg{
+            width: 178px;
+            height: 25px;
+            float: left;
+            position: relative;     
+        }
+        .strip_message{
+            width: 133px;
+            height: 25px;
+            line-height: 25px;
+            float: left;
+            padding-left: 30px;
+            /* background: #409eff; */
+            background: linear-gradient(to right,#559ffe ,#b6d6ff );
+            border-radius: 0 1px 1px 0;
+        }
+        .right_strip_bg{
+            float: right;
+            width:0;
+            height:0;  
+            border-width:12.5px 0 12.5px 15px;
+            border-style:solid;
+            border-radius: 1px;
+            display: inline-block;
+            border-color:transparent transparent transparent #b6d6ff;
+            position: absolute;
+            bottom: 0;
+        }
+        .left_strip_bg{float: right; width:0;height:0;   border-width:12.5px 0 12.5px 15px; border-style:solid; border-radius: 1px; display: inline-block; border-color:transparent transparent transparent #fff; position: absolute; bottom: 0;   }
+    </style>
+</head>
+<body>
+    <ul class="strip">
+        <li class="strip_bg"><p class="strip_message">111</p><p class="right_strip_bg"></p></li>
+        <li class="strip_bg next_bg"><p class="left_strip_bg"></p><p class="strip_message">222</p><p class="right_strip_bg"></p></li>
+        <li class="strip_bg next_bg"><p class="left_strip_bg"></p><p class="strip_message">333</p><p class="right_strip_bg"></p></li>
+        <li class="strip_bg next_bg"><p class="left_strip_bg"></p><p class="strip_message">444</p><p class="right_strip_bg"></p></li>
+        <li class="strip_bg next_bg"><p class="left_strip_bg"></p><p class="strip_message">555</p></p></li>
+        
+    </ul>
+</body>
+</html>

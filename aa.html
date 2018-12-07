@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav li a.hover{
+            background: #409eff;
+            color: #fff
+        }
+        .nav li a{
+            padding: 10px;
+            color: #999;
+        }
+        ul li{
+            float: left;
+            list-style: none;margin-right: 20px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav li a:active,.nav li a:hover{
+            color: #409eff;
+            border-bottom: 2px solid #409eff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="1.html" class="hover"> 1111111</a></li>
+            <li><a href="2.html"> 2222222</a></li>
+            <li><a href="https://www.baidu.com"> 3333333</a></li>
+            <li><a href="4.html"> 4444444</a></li>
+            <li><a href="javascript:;" onclick="fun()">5555555</a></li>
+        </ul>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav a").each(function () {
+            $(this).click(function () {
+                $(".nav .hover").removeClass("hover");
+                $(this).addClass("hover");
+                return false;
+            });
+        });
+    });
+    function fun(){
+        window.location.href="http://www.baidu.com";
+        } 
+</script>
+</html>
